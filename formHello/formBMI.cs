@@ -45,7 +45,7 @@ namespace formHello
             //เช็ก error และ คำนวณ
             if (int.TryParse(txtWeight.Text, out weight) && double.TryParse(txtHeight.Text, out cm))
             {
-                if (weight >= 40 && weight <= 250 && cm >= 30 && cm <= 220)
+                if (weight >= 20 && weight <= 350 && cm >= 30 && cm <= 250)
                 {
                     height = cm / 100;
                     bmi = weight / (height * height);

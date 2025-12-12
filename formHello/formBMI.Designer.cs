@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             groupBox2 = new GroupBox();
+            label3 = new Label();
+            label1 = new Label();
             label2 = new Label();
             label7 = new Label();
             txtHeight = new TextBox();
@@ -45,6 +47,8 @@
             // groupBox2
             // 
             groupBox2.BackColor = SystemColors.GradientActiveCaption;
+            groupBox2.Controls.Add(label3);
+            groupBox2.Controls.Add(label1);
             groupBox2.Controls.Add(label2);
             groupBox2.Controls.Add(label7);
             groupBox2.Controls.Add(txtHeight);
@@ -60,6 +64,24 @@
             groupBox2.TabIndex = 8;
             groupBox2.TabStop = false;
             groupBox2.Text = "คำนวณค่า BMI";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(396, 65);
+            label3.Name = "label3";
+            label3.Size = new Size(40, 25);
+            label3.TabIndex = 16;
+            label3.Text = "ก.ก.";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(395, 117);
+            label1.Name = "label1";
+            label1.Size = new Size(41, 25);
+            label1.TabIndex = 15;
+            label1.Text = "ซ.ม.";
             // 
             // label2
             // 
@@ -91,7 +113,7 @@
             // 
             // btnOK
             // 
-            btnOK.Location = new Point(433, 84);
+            btnOK.Location = new Point(463, 85);
             btnOK.Margin = new Padding(4);
             btnOK.Name = "btnOK";
             btnOK.Size = new Size(118, 36);
@@ -182,5 +204,7 @@
         private Label lblResult1;
         private Label label2;
         private GroupBox groupBox1;
+        private Label label3;
+        private Label label1;
     }
 }
